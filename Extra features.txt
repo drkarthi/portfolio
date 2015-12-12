@@ -1,0 +1,10 @@
+1. Changing image gallery
+
+Accessibility
+
+1. The background image has been added only to laptop view because mobile phones and tablets often run on 
+cellular network and the connection speed is slow in some areas. 
+
+Responsive and serving the purpose
+
+1. 

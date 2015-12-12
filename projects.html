@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta charset="utf-8">
+  <title>Projects</title>
+  <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-3.3.5-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <h2 id="name"> Karthik Ramanathan </h2>
+    <img src="images/logo.png" alt="University of Michigan logo">
+  </header>
+
+  <nav>
+    <ul class="nav nav-pills">
+      <li><a href="index.html">Home</a></li>
+      <li class="active"><a href="projects.html">Projects</a></li>
+      <li><a href="favorites.html">Favorites</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <ul class="projects-content">
+    <li class="box-view">
+      <h3>Efficient broadcasting in dynamic networks</h3>
+      <h4 class="highlight">Advisor - Animesh Mukherjee</h4>
+      <p>
+        This project modelled the effect of contact duration when broadcasting large messages in a dynamic network.
+        Take the example of a video that has to be broadcasted in a bluetooth network, where the connection between
+        devices keeps changing. This project acknowledged that the entire file may not be sent in one contact.
+        We modelled the contact duration using Gaussian and Poisson distributions and addressed the question
+        'Which broadcasting algorithm works best for this contact duration model?'
+      </p>
+    </li>
+
+    <li class="box-view">
+      <h3>Citation recommendation</h3>
+      <h4 class="highlight">Advisor - Animesh Mukherjee</h4>
+      <p>
+        As a group of two people, we implemented two citation recommendation systems based on PageRank and
+        Linear Regression and compared the results of the two.
+      </p>
+    </li>
+
+    <li class="box-view">
+      <h3>Automatic highlight generation for cricket</h3>
+      <h4 class="highlight">Advisor - Pawan Goyal</h4>
+      <p>
+        As a group of ten people, we built an automatic highlights generator for cricket matches. The system uses
+        commentary from the website espncricinfo.com as the data and runs a Naive Bayes classifier to determine if
+        an event is a highlight or not. Some of the features used were the presence of a exclamation mark and the
+        length of commentary. I built the parser and the system for computing precision and recall.
+      </p>
+    </li>
+  </ul>
+
+  <footer>
+    <p>Follow me on:
+       <a class="fa fa-facebook-official" href="https://www.facebook.com/karthikthehun"></a>
+       <a class="fa fa-twitter" href="https://twitter.com/karthikthehun"></a>
+       <a class="fa fa-linkedin" href="https://www.linkedin.com/pub/karthik-ramanathan/51/6b4/b96"></a>
+    </p>
+    <a href="contact.html">Contact</a>
+  </footer>
+</body>
+</html>

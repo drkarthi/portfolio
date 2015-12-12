@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta charset="utf-8">
+  <title>Interests</title>
+  <link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap-3.3.5-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <h2 id="name"> Karthik Ramanathan </h2>
+    <img src="images/logo.png" alt="Univeristy of Michigan logo">
+  </header>
+
+  <nav>
+    <ul class="nav nav-pills">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li class="active"><a href="favorites.html">Favorites</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="fav-headings">Favourite Books</h2>
+  <img src="images/crime_and_punishment.jpg" class="gallery book" alt="Crime and Punishment">
+
+  <h2 class="fav-headings">Favourite Places</h2>
+  <img src="images/ann_arbor_mobile.jpg" class="gallery place" alt="Ann Arbor">
+
+  <footer>
+    <p>Follow me on:
+       <a class="fa fa-facebook-official" href="https://www.facebook.com/karthikthehun"></a>
+       <a class="fa fa-twitter" href="https://twitter.com/karthikthehun"></a>
+       <a class="fa fa-linkedin" href="https://www.linkedin.com/pub/karthik-ramanathan/51/6b4/b96"></a>
+    </p>
+    <a href="contact.html">Contact</a>
+  </footer>
+
+<!-- Preferably only in laptop view -->
+  <script>
+    var bookImage = document.getElementsByClassName("book")[0];
+    bookImage.onclick = function(){
+      var mySrc = bookImage.getAttribute('src');
+      if(mySrc == 'images/crime_and_punishment.jpg'){
+        bookImage.setAttribute('src', 'images/norwegian_wood.jpg');
+        bookImage.setAttribute('class', 'gallery book');
+      }
+      else if(mySrc == 'images/norwegian_wood.jpg'){
+        bookImage.setAttribute('src', 'images/wise_and_otherwise.jpg');
+        bookImage.setAttribute('class', 'gallery book');
+      }
+      else if(mySrc == 'images/wise_and_otherwise.jpg'){
+        bookImage.setAttribute('src', 'images/pride_and_prejudice.jpg');
+        bookImage.setAttribute('class', 'gallery book');
+      }
+      else{
+        bookImage.setAttribute('src', 'images/crime_and_punishment.jpg');
+        bookImage.setAttribute('class', 'gallery book');
+      }
+    }
+
+    var placeImage = document.getElementsByClassName("place")[0];
+    placeImage.onclick = function(){
+      var mySrc = placeImage.getAttribute('src');
+      if(mySrc == 'images/ann_arbor_mobile.jpg'){
+        placeImage.setAttribute('src', 'images/gangtok_mobile.jpg');
+        placeImage.setAttribute('class', 'gallery place');
+      }
+      else if(mySrc == 'images/gangtok_mobile.jpg'){
+        placeImage.setAttribute('src', 'images/singapore_mobile.jpg');
+        placeImage.setAttribute('class', 'gallery place');
+      }
+      else if(mySrc == 'images/singapore_mobile.jpg'){
+        placeImage.setAttribute('src', 'images/malaysia_mobile.jpg');
+        placeImage.setAttribute('class', 'gallery place');
+      }
+      else{
+        placeImage.setAttribute('src', 'images/ann_arbor_mobile.jpg');
+        placeImage.setAttribute('class', 'gallery place');
+      }
+    }
+  </script>
+
+</body>
+</html>

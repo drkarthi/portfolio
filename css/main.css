@@ -1,0 +1,101 @@
+header{
+  background-color: #5882FA;
+  float: left;
+  width: 100%;
+  color: #ffffff;
+}
+
+header img{
+  float: right;
+  padding: 20px;
+  display: none;
+}
+
+#name{
+  display: inline-block;
+  color: #e7e7e7;
+}
+
+nav{
+  border-width: 0px 0px 1px 0px;
+  border-style: dashed;
+  border-color: #5882FA;
+  margin-bottom: 20px;
+}
+
+.content{
+  font-family: "Calibri", "Times New Roman";
+  font-size: 18px;
+  margin: 10px;
+}
+
+.projects-content{
+  font-family: "Calibri", "Times New Roman";
+  font-size: 18px;
+  margin: 10px;
+}
+
+#karthik{
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.highlight{
+  font-variant: small-caps;
+  font-weight:600;
+}
+
+.box-view{
+  margin-top: 40px;
+}
+
+.fav-headings{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Calibri", "Times New Roman";
+}
+
+.gallery{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact{
+  padding-top: 40px;
+}
+
+footer{
+  background-color: #5882FA;
+  text-align: center;
+  color: #e7e7e7;
+}
+
+footer a{
+  color: #e7e7e7;
+}
+
+@media only screen and (min-width: 600px){
+  header img{
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  body{
+    background: url('../static/images/body-bgimage.jpg');
+  }
+  #karthik{
+    float: left;
+    padding: 20px;
+  }
+  .content{
+    float: right;
+  }
+}
+
+}

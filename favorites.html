@@ -27,9 +27,6 @@
   <h2 class="fav-headings">Favourite Books</h2>
   <img src="images/crime_and_punishment.jpg" class="gallery book" alt="Crime and Punishment">
 
-  <h2 class="fav-headings">Favourite Places</h2>
-  <img src="images/ann_arbor_mobile.jpg" class="gallery place" alt="Ann Arbor">
-
   <footer>
     <p>Follow me on:
        <a class="fa fa-facebook-official" href="https://www.facebook.com/karthikthehun"></a>
@@ -61,28 +58,6 @@
         bookImage.setAttribute('class', 'gallery book');
       }
     }
-
-    var placeImage = document.getElementsByClassName("place")[0];
-    placeImage.onclick = function(){
-      var mySrc = placeImage.getAttribute('src');
-      if(mySrc == 'images/ann_arbor_mobile.jpg'){
-        placeImage.setAttribute('src', 'images/gangtok_mobile.jpg');
-        placeImage.setAttribute('class', 'gallery place');
-      }
-      else if(mySrc == 'images/gangtok_mobile.jpg'){
-        placeImage.setAttribute('src', 'images/singapore_mobile.jpg');
-        placeImage.setAttribute('class', 'gallery place');
-      }
-      else if(mySrc == 'images/singapore_mobile.jpg'){
-        placeImage.setAttribute('src', 'images/malaysia_mobile.jpg');
-        placeImage.setAttribute('class', 'gallery place');
-      }
-      else{
-        placeImage.setAttribute('src', 'images/ann_arbor_mobile.jpg');
-        placeImage.setAttribute('class', 'gallery place');
-      }
-    }
-  </script>
 
 </body>
 </html>

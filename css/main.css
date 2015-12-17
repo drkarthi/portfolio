@@ -20,7 +20,7 @@ header img{
 
 nav{
   border-width: 0px 0px 1px 0px;
-  border-style: dashed;
+  border-style: inset;
   border-color: #5882FA;
   margin-bottom: 20px;
 }
